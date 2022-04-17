@@ -6,9 +6,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(24deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 42%, rgba(0,212,255,1) 100%); 
+    font-family: 'Roboto', sans-serif;
 
     .heading {
         font-size: 2.5em;
+        color: #ffde58;
+        text-shadow: 2px 2px 3px #000000;
     }
 
     #quote-box {
@@ -17,7 +22,7 @@ body {
         width: 30vw;
         // height:40vh;
         background-color: white;
-        border: 2px solid black;
+        box-shadow: 5px 5px 7px #1f1f1f;
         border-radius: 10px;
         padding: 3em;
 
@@ -25,6 +30,102 @@ body {
             font-size: 2em;
             text-align: center;
             margin-bottom: 1em;
+            font-weight: 500;
+            text-shadow: 3px 3px 3px #ffff55;
+            font-family: 'Pacifico', cursive;
+        }
+
+        #author {
+            text-align: right;
+            margin-bottom: 2em;
+            font-size: 1.3em;
+            font-weight: 400;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            #new-quote {
+                align-items: center;
+                text-shadow: 2px 2px 2px #1f0000;
+                appearance: none;
+                background-image: radial-gradient(100% 100% at 100% 0, #c1cd16 0, #af890a 100%);
+                border: 0;
+                border-radius: 6px;
+                box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,
+                rgba(45, 35, 66, .3) 0 7px 13px -3px,
+                rgba(58, 65, 111, .5) 0 -3px 0 inset;
+                
+                color: #fff;
+                cursor: pointer;
+                display: inline-flex;
+                height: 48px;
+                justify-content: center;
+                line-height: 1;
+                list-style: none;
+                overflow: hidden;
+                padding-left: 16px;
+                padding-right: 16px;
+                position: relative;
+                text-align: left;
+                text-decoration: none;
+                transition: box-shadow .15s,
+                transform .15s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                white-space: nowrap;
+                will-change: box-shadow,
+                transform;
+                font-size: 18px;
+
+                &:hover {
+                    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #6f1f04 0 -3px 0 inset;
+                    transform: translateY(-2px);
+                }
+            }
+
+            #tweet {
+                align-items: center;
+                appearance: none;
+                background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+                text-shadow: 2px 2px 2px #1f0000;
+                border: 0;
+                border-radius: 6px;
+                box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,
+                rgba(45, 35, 66, .3) 0 7px 13px -3px,
+                rgba(58, 65, 111, .5) 0 -3px 0 inset;
+                
+                color: #fff;
+                cursor: pointer;
+                display: inline-flex;
+                height: 48px;
+                justify-content: center;
+                line-height: 1;
+                list-style: none;
+                overflow: hidden;
+                padding-left: 16px;
+                padding-right: 16px;
+                position: relative;
+                text-align: left;
+                text-decoration: none;
+                transition: box-shadow .15s,
+                transform .15s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                white-space: nowrap;
+                will-change: box-shadow,
+                transform;
+                font-size: 18px;
+
+                &:hover {
+                    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+                    transform: translateY(-2px);
+                }
+            }
         }
     }
 }

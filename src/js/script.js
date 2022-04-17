@@ -23,8 +23,8 @@ const getRandomQuote = async () => {
         const text = randomQuote.text;
         const author = randomQuote.author;
 
-        quoteText.innerText = text;
-        quoteAuthor.innerText = author;
+        quoteText.innerText = " \" " + text ;
+        quoteAuthor.innerText = "-- " + author;
     } catch (error) {
         console.log(`An error occurred: ${error}`)
     } finally {
